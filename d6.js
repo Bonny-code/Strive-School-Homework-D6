@@ -128,11 +128,22 @@ console.log(d)
         values: [3, 3, 4]
     }
 */
+function rollTheDices(){
 
+}
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
-
+let today = new Date().toISOString().slice(0, 10)
+function howManyDaysIsIt(){
+    const startDate  = '2021-04-15';
+    const endDate    = today;
+    
+    const diffInMs   = new Date(endDate) - new Date(startDate)
+    const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
+    
+}
+    console.log( diffInDays  );
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
