@@ -147,7 +147,16 @@ function howManyDaysIsIt(){
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
-
+let d = new Date();
+let n = d.getFullYear();
+function isTodayMyBirthDay(birthYear){
+	let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    age = currentYear - birthYear;
+    return age;
+}
+calculatedAge = getAge(year_born);
+console.log("Hello, " + "you are " + calculatedAge + " years old!");
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
 
