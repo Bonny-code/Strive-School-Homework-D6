@@ -101,6 +101,15 @@ console.log("i have 4 dogs".replace(/[0-9]/g, ''))
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
+function isThisAnEmail(str){
+    let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (str.value.match(validRegex)) { 
+        return true;
+    
+      } else {
+          return false
+      }
+}
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
