@@ -114,7 +114,10 @@ function isThisAnEmail(str){
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
-
+function whatDayIsIt(){
+    let d = new Date()
+}
+console.log(d)
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
