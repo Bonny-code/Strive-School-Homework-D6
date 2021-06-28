@@ -60,7 +60,13 @@ function dice(max) {
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
-
+function whoIsBigger(a,b){
+    if (a => b){
+        return a
+    } else {
+        return b
+    }
+}
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
