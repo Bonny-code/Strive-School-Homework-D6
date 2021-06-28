@@ -28,16 +28,23 @@ let random = Math.floor(Math.random() * 20) + 0
     console.log(random)
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
-*/
-
+*/ 
+let me = {
+    name: "Boniface",
+    surname: "Ndi",
+    age: 31
+    }
+    console.log(me)
+     
+     
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
 */
-
+   delete me.age 
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
-
+me.skills = ["javascript", "HTML", "CSS", "Bootstrap", "mongoDB", "Nodejs", "React", "GitHub"]
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
